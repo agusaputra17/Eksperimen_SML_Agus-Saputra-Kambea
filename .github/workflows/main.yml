@@ -28,3 +28,9 @@ jobs:
 
       - name: Run preprocessing script
         run: python preprocessing/automate_Agus-Saputra-Kambea.py
+
+      - name: Upload preprocessing result as artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: hasil-preprocessing
+          path: preprocessing/banking-data_preprocessing.csv
