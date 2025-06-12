@@ -34,7 +34,7 @@ jobs:
 
       - name: Commit and push preprocessing result
         run: |
-          git config --global user.name ${{ secrets.username }}
+          git config --global user.name ${{ secrets.name }}
           git config --global user.email ${{ secrets.email }}
           git add -f preprocessing/
           git commit -m "Add preprocessing result from GitHub Actions" || echo "Nothing to commit"
